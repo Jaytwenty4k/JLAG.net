@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding: 15px 30px;
+            border: 2px solid white;
+            color: white;
+            background-color: #333;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease, border-color 0.3s ease;
+            position: relative;
+        }
+
+        /* Animation beim Hover */
+        .navbar a:hover {
+            animation: rainbow 1s linear infinite;
+        }
+
+        /* Regenbogen Farbverlauf */
+        @keyframes rainbow {
+            0% { color: red; border-color: red; }
+            14% { color: orange; border-color: orange; }
+            28% { color: yellow; border-color: yellow; }
+            42% { color: green; border-color: green; }
+            57% { color: blue; border-color: blue; }
+            71% { color: indigo; border-color: indigo; }
+            85% { color: violet; border-color: violet; }
+            100% { color: red; border-color: red; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#informationen">Informationen</a>
+        <a href="#shop">Shop</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#mehr">Mehr</a>
+    </div>
+
+</body>
+</html>
